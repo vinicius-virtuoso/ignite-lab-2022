@@ -20,7 +20,10 @@ export function Lesson(props: PROPS) {
   );
 
   return (
-    <Link to={`/event/lessons/${props.slug}`} className="group">
+    <Link
+      to={`/event/lessons/${props.slug}`}
+      className={isLessonAvailable ? "group" : "opacity-30 cursor-not-allowed"}
+    >
       <span className="text-gray-300">{availableDateFormatted}</span>
       <div className="rounded border border-gray-500 p-4 mt-2 shadow-lg group-hover:border-blue-300 transition-colors">
         <header className="flex justify-between items-center">

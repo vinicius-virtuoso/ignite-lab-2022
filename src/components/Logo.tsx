@@ -1,10 +1,15 @@
-export function Logo() {
+interface Size {
+  w: string;
+  h: string;
+}
+
+export function Logo(props: Size) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="237"
-      height="34"
-      fill="none"
+      width={props.w}
+      height={props.h}
+      fill="#000000"
       viewBox="0 0 237 34"
     >
       <path

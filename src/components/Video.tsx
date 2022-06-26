@@ -1,15 +1,8 @@
-import { DefaultUi, Player, Youtube } from "@vime/react";
-import {
-  Atom,
-  DiscordLogo,
-  FileArrowDown,
-  Image,
-  Lightning,
-} from "phosphor-react";
+import { DiscordLogo, FileArrowDown, Image } from "phosphor-react";
 import { Button } from "./Button";
 import { External } from "./External";
-import "@vime/core/themes/default.css";
 import { gql, useQuery } from "@apollo/client";
+import { Logo } from "./Logo";
 
 const GET_LESSON_BY_SLUG = gql`
   query GetLessonBySlug($slug: String) {
@@ -58,24 +51,28 @@ export function Video(props: VideoProps) {
 
   if (!data) {
     return (
-      <div className="flex-1">
+      <div className="flex-1 h-[calc(100vh-75px)]">
         <p>Carregando...</p>
       </div>
     );
   }
 
   return (
-    <div className="flex-1">
-      <div className="bg-black flex justify-center">
-        <div className="h-full w-full max-w-[1024px] max-h-[60vh] aspect-video">
-          <Player>
-            <Youtube videoId={data.lesson.videoId} />
-            <DefaultUi />
-          </Player>
+    <div className="flex-1 h-[calc(100vh-75px)] overflow-auto">
+      <div className="bg-gray-600 flex justify-center">
+        <div className="h-full w-full max-w-[1100px] max-h-[70vh] aspect-video">
+          <iframe
+            src={`//www.youtube.com/embed/${data.lesson.videoId}?autoplay=1`}
+            frameBorder="0"
+            title={data.lesson.videoId}
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="h-full w-full"
+          ></iframe>
         </div>
       </div>
 
-      <div className="p-8 max-w-[1024px] mx-auto">
+      <div className="p-8 pb-0 max-w-[1100px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
@@ -128,6 +125,12 @@ export function Video(props: VideoProps) {
             máquina
           </External>
         </div>
+        <footer className=" flex items-center gap-4 mt-20 border-t">
+          <div className=" flex items-center gap-4 py-5">
+            <span className="text-sm">Desenvolvido no evento</span>
+            <Logo w="120" h="37" />
+          </div>
+        </footer>
       </div>
     </div>
   );
