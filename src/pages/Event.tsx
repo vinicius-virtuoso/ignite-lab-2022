@@ -9,7 +9,7 @@ export function Event() {
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       <Header />
-      <main className="flex flex-1 max-w-[95%] mx-auto">
+      <main className="flex flex-1 max-w-[1440px] mx-auto w-full">
         {slug ? (
           <Video lessonSlug={slug} />
         ) : (
