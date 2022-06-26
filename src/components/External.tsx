@@ -1,7 +1,7 @@
 import { CaretRight } from "phosphor-react";
 
 interface External {
-  href: string | null;
+  href: string;
   children: string;
   icon?: any;
   title: string;
