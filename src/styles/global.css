@@ -27,3 +27,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -font-smoothing: antialiased;
 }
+
+.active_link {
+  pointer-events: none;
+}
+.active_link .sub-div {
+  @apply bg-blue-500 border-blue-500;
+  position: relative;
+  z-index: 99;
+}
+.active_link .sub-div header span {
+  @apply text-white;
+}
+.active_link .sub-div::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -5px;
+  transform: translateY(-30%) rotate(45deg);
+  width: 1rem;
+  height: 1rem;
+  z-index: 1;
+  @apply bg-blue-500;
+}

@@ -1,6 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Event } from "./pages/Event";
+import { Subscribe } from "./pages/Subscribe";
 
 const GET_LESSON_QUERY = gql`
   query {
@@ -21,7 +22,7 @@ export function Router() {
 
   return (
     <Routes>
-      <Route path="/" element={<h1>Home</h1>} />
+      <Route path="/" element={<Subscribe />} />
       <Route path="/event" element={<Event />} />
       <Route path="/event/lessons/:slug" element={<Event />} />
       {data && (
