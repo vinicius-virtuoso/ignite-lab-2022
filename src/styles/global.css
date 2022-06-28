@@ -23,7 +23,7 @@
   border: 2px solid #121214;
 }
 body {
-  @apply bg-gray-900 text-gray-100;
+  @apply bg-gray-900 text-gray-100 overflow-hidden;
   -webkit-font-smoothing: antialiased;
   -font-smoothing: antialiased;
 }
@@ -49,4 +49,10 @@ body {
   height: 1rem;
   z-index: 1;
   @apply bg-blue-500;
+}
+
+@media (max-width: 768px) {
+  .active_link .sub-div::after {
+    display: none;
+  }
 }

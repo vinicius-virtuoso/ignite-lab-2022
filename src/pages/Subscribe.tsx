@@ -50,9 +50,9 @@ export function Subscribe() {
           className="mt-10 max-w-[1100px]"
           alt="code-mockup"
         />
-        <footer className="flex items-center gap-4 border-t justify-center w-full ">
+        <footer className="flex items-center gap-4 border-t border-gray-500 justify-center w-full bg-gray-700">
           <div className=" flex items-center gap-4 py-5 max-w-[1100px] w-full">
-            <span className="text-sm">Desenvolvido no evento</span>
+            <span className="text-sm">Desenvolvido por Vinícius Virtuoso</span>
             <Logo w="120" h="37" />
           </div>
         </footer>

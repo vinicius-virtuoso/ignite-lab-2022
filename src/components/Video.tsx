@@ -60,7 +60,7 @@ export function Video(props: VideoProps) {
 
   return (
     <div className="flex-1 h-[calc(100vh-75px)] overflow-auto w-full">
-      <div className="bg-gray-900 flex justify-center">
+      <div className="bg-gray-900 flex justify-center ">
         <div className="h-full w-full max-w-[1100px] max-h-[70vh] aspect-video">
           <iframe
             src={`//www.youtube.com/embed/${data.lesson.videoId}?autoplay=1`}
@@ -73,8 +73,8 @@ export function Video(props: VideoProps) {
         </div>
       </div>
 
-      <div className="p-8 pb-0 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
+      <div className="p-8 px-4 pb-0 max-w-[1100px] mx-auto ">
+        <div className="flex items-start gap-16 flex-col md:flex-row">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
             <p className="mt-4 text-gray-200 leading-relaxed">
@@ -107,7 +107,7 @@ export function Video(props: VideoProps) {
             </Button>
           </div>
         </div>
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="gap-8 mt-20 grid grid-cols-1 lg:grid-cols-2">
           {data.lesson?.challenge?.url && (
             <External
               href={data.lesson.challenge.url}
