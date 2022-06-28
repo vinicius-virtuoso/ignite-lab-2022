@@ -59,7 +59,7 @@ export function Video(props: VideoProps) {
   }
 
   return (
-    <div className="flex-1 h-[calc(100vh-75px)] overflow-auto w-full">
+    <div className="flex-1  h-[calc(100vh-75px)] overflow-auto w-full">
       <div className="bg-gray-900 flex justify-center ">
         <div className="h-full w-full max-w-[1100px] max-h-[70vh] aspect-video">
           <iframe
