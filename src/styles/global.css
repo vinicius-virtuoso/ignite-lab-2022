@@ -23,7 +23,7 @@
   border: 2px solid #121214;
 }
 body {
-  @apply bg-gray-900 text-gray-100 overflow-hidden;
+  @apply bg-gray-900 text-gray-100;
   -webkit-font-smoothing: antialiased;
   -font-smoothing: antialiased;
 }
