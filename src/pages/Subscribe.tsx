@@ -53,7 +53,7 @@ export function Subscribe() {
               <strong className="text-blue-200"> aplicação completa</strong>, do
               zero, com <strong className="text-blue-200">React</strong>.
             </h1>
-            <p className="text-gray-200 my-4 leading-relaxed text-sm opacity-80 lg:text-lg">
+            <p className="text-gray-200 my-4 leading-relaxed text-sm opacity-80 lg:text-lg ">
               Em apenas uma semana você vai dominar na prática uma das
               tecnologias mais utilizadas e com alta demanda para acessar as
               melhores oportunidades do mercado.
