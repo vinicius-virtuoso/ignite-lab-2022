@@ -40,11 +40,7 @@ export function Sidebar() {
       <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
         Cronograma de aulas
       </span>
-      <div
-        className={`flex flex-col gap-8 ${
-          !isOpen ? "whitespace-nowrap opacity-0 scale-0" : ""
-        }`}
-      >
+      <div className={`flex flex-col gap-8 whitespace-normal`}>
         {data?.lessons.map((lesson) => (
           <Lesson
             key={lesson.id}
