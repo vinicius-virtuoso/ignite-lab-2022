@@ -19,9 +19,11 @@ Este é uma plataformar de video-aulas que foi construida durante o evento Ignit
 
 ## 🛠 Tecnologias utilizadas
 
-![react][react] ![graphql][graphql] ![apollo client][apollo] ![tailwind css][tailwind] ![vite][vite]
+![react][react] ![typescript][typescript] ![graphql][graphql] ![apollo client][apollo] ![tailwind css][tailwind] ![vite][vite]
 
 [react]: https://img.shields.io/badge/react-1E4174?style=for-the-badge&logo=react&logoColor=white
+
+[typescript]: https://img.shields.io/badge/typescript-1E4174?style=for-the-badge&logo=typescript&logoColor=white
 
 [graphql]: https://img.shields.io/badge/graphql-1E4174?style=for-the-badge&logo=graphql&logoColor=white
 
