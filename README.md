@@ -1,8 +1,10 @@
-<h1 align="center">
+<br/>
+<div align="center">
 
   <img src="./preview/logo.svg" width="400" alt="Ignite Lab 2022">
 
-</h1>
+<br/></div>
+
 
 ## Descrição do projeto
 
