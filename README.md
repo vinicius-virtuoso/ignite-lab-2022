@@ -1,18 +1,18 @@
 <h1 align="center">
 
-  <img src="./preview/logo.svg" width="300" alt="Ignite Shop">
+  <img src="./preview/logo.svg" width="400" alt="Ignite Lab 2022">
 
 </h1>
 
 ## Descrição do projeto
 
-Este é uma plataformar de video-aulas que foi construida durante o evento ignite lab 2022. Onde utilizamos tecnicas e tecnologias mordernas na contrução da aplicação. 
+Este é uma plataformar de video-aulas que foi construida durante o evento Ignite lab 2022. Onde utilizamos tecnicas e tecnologias mordernas na contrução da aplicação. 
 
 ## Oque implementei a mais do projeto inicial:
 - [x] Versão mobile com menu
 
 
-#### Vejo o projeto online: https://ignite-shop-eta.vercel.app/
+#### Veja o projeto online: https://ignite-lab-2022-lemon.vercel.app
 
 
 ## 🛠 Tecnologias utilizadas
