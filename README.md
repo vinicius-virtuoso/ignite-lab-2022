@@ -8,7 +8,7 @@
 
 ## Descrição do projeto
 
-Essa é uma plataformar de video-aulas que foi construida durante o evento Ignite lab 2022. Onde utilizamos tecnicas e tecnologias mordernas na contrução da aplicação. 
+Essa é uma plataforma de video-aulas que foi construida durante o evento Ignite lab 2022. Onde utilizamos tecnicas e tecnologias mordernas na contrução da aplicação. 
 
 ## Oque implementei a mais do projeto inicial:
 - [x] Versão mobile com menu
